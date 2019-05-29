@@ -1,6 +1,6 @@
 {
   "name": "passport-linkedin-token-v2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Passport strategy for authenticating with LinkedIn OAuth2 tokens. It works for lite profile and email addresses.",
   "main": "index.js",
   "directories": {
