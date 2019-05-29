@@ -29,7 +29,7 @@ passport.use(
 			redirectURL: env.LinkedInRedirectURL,
 			scope: ["r_emailaddress", "r_liteprofile"]
 		},
-		async (accessToken, refreshToken, profile, done) => {
+		async (req, accessToken, refreshToken, profile, done) => {
             User.findOrCreate({ linkedinId: profile.id }, function (err, user) {
                 return done(err, user);
             });
